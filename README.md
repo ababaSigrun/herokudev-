@@ -1,4 +1,4 @@
 # herokudev-
 
-ポートフィリオをherokuで作る。
+ポートフォリオをherokuで作る。
 cssとhtmlとか
