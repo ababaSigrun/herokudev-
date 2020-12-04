@@ -1,4 +1,8 @@
 titleWord{
     font-size:20px;
     color:red;
-  }
+}
+
+titleWord:active{
+    background-color: pink;
+}
