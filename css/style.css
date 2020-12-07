@@ -10,17 +10,17 @@ titleWord:active{
     background-color: pink;
 }
 
-skillDisplay{
+Display.skill{
     background-color: beige;
 }
 
-storyDisplay{
+Display.story{
         background-color: lightcyan;
         display:none;
 
 }
 
-profileDisplay{
+Display.profile{
     background-color: lavender;
     display:none;
 }
