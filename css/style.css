@@ -1,8 +1,36 @@
 titleWord{
     font-size:20px;
     color:red;
+    border:2px gray solid;
+    padding:2px 2px 2px 2px;
+    margin: 10px;
 }
 
 titleWord:active{
     background-color: pink;
+}
+
+skillDisplay{
+    background-color: beige;
+}
+
+storyDisplay{
+        background-color: lightcyan;
+        display:none;
+
+}
+
+profileDisplay{
+    background-color: lavender;
+    display:none;
+}
+
+
+p.titleHead{
+  font-size:large;
+  margin:1px 1px 1px 1px;
+}
+
+div.speace{
+  margin: 10px;  
 }
