@@ -12,6 +12,7 @@ titleWord:active{
 
 Display.skill{
     background-color: beige;
+    display:none;
 }
 
 Display.story{
@@ -31,6 +32,10 @@ p.titleHead{
   margin:1px 1px 1px 1px;
 }
 
+div.sentence{
+    margin: 10px;
+
+}
 div.speace{
   margin: 10px;  
 }
