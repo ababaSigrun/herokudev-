@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css" >
-<title>ポートフォリオ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ポートフォリオ</title>
 </head>
 
 <body>
 
-<p class="titleHead">herokuで表示</p>
-<div class="speace">
-    <titleWord id="skill" >skill</titleWord>
-    <titleWord id="story" >story</titleWord>
-    <titleWord id="profile">profile</titleWord>
-</div>    
+    <p class="titleHead">herokuで表示</p>
+    <div class="speace">
+        <titleWord id="skill">skill</titleWord>
+        <titleWord id="story">story</titleWord>
+        <titleWord id="profile">profile</titleWord>
+    </div>
 
 
-<div class="speace">
-    <Display class="skill" id="skilD">skillDisplay:
-        <button class="default" type=button onclick="setSkillMode('progarm')">Progarm</button>
-        <button class="default" type=button onclick="setSkillMode('detaBase')">DetaBase</button>
-        <button class="default" type=button onclick="setSkillMode('tool')">Tool</button>
-        <canvas id="chart_cv">使いまわしたい</canvas>
-    </Display>
-    <Display class="story" id="storyD">storyDisplay:
-        <div class="sentence">
-            1年目
-        </div>
-    </Display>
-    <Display class="profile" id="porfileD">profileDisplay:
+    <div class="speace">
+        <Display class="skill" id="skilD">skillDisplay:
+            <div>
+                <button class="default" type=button onclick="setSkillMode('progarm')">Progarm</button>
+                <button class="default" type=button onclick="setSkillMode('detaBase')">DetaBase</button>
+                <button class="default" type=button onclick="setSkillMode('tool')">Tool</button>
+            </div>
+            <canvas id="chart_cv">使いまわしたい</canvas>
+        </Display>
+        <Display class="story" id="storyD">storyDisplay:
+            <div class="sentence">
+                1年目
+            </div>
+        </Display>
+        <Display class="profile" id="porfileD">profileDisplay:
             <div class="sentence">
                 1986/07/15
             </div>
-    </Display>
-    </Display>
-</div>
+        </Display>
+        </Display>
+    </div>
 
 
 
 
-<script type="text/javascript"
- src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js">
-</script>
-<script src="script/chartData.js"></script>
-<script src="script/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js">
+    </script>
+    <script src="script/chartData.js"></script>
+    <script src="script/index.js"></script>
 </body>
+
 </html>
