@@ -21,12 +21,11 @@ const detaBaseData = {
 // グラフを描画 --- (*2)
 
 function setSkillMode(mode) {
-    // alert(mode);
+    if (window.chart_cv instanceof Chart) {
+        chart_cv.destroy();
+    }
     switch (mode) {
         case "progarm":
-            if (window.chart_cv instanceof Chart) {
-                chart_cv.destroy();
-            }
             ctx = document.getElementById('chart_cv')
             chart_cv = new Chart(ctx, {
                 type: 'bar', // グラフの種類
@@ -47,10 +46,6 @@ function setSkillMode(mode) {
             break;
 
         case "detaBase":
-            if (window.chart_cv instanceof Chart) {
-                chart_cv.destroy();
-            }
-
             ctx = document.getElementById('chart_cv')
             chart_cv = new Chart(ctx, {
                 type: 'bar', // グラフの種類
@@ -71,12 +66,6 @@ function setSkillMode(mode) {
             break;
 
         case "tool":
-            if (window.chart_cv instanceof Chart) {
-                chart_cv.destroy();
-            }
-
-
-            // エラーを握りつぶす。ここ何かいい書き方できるはず。
 
 
 
