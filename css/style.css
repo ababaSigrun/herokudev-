@@ -61,5 +61,15 @@ button.default:hover {
 
 button.default:active{
     background-color: pink;
-        color:red;
+    color:red;
+}
+
+/** テーブル */
+th{
+    border: 1px solid #333;
+    background-color  :rgb(20, 114, 223);;
+}
+
+td {
+    border: 1px solid #333;
 }
