@@ -16,7 +16,15 @@ const detaBaseData = {
     }]
 }
 
-
+const officeData = {
+    labels: ['Excel', 'Word', 'Outlook', 'PowerPoint'],
+    datasets: [{
+        label: '習得レベル',
+        data: [5, 4, 2.0, 2.0],
+        backgroundColor: ['lightseagreen', 'darkturquoise', 'mediumturquoise', 'turquoise'],
+        borderWidth: 1
+    }]
+}
 
 // グラフを描画 --- (*2)
 
@@ -65,8 +73,24 @@ function setSkillMode(mode) {
             })
             break;
 
-        case "tool":
-
+        case "office":
+            ctx = document.getElementById('chart_cv')
+            chart_cv = new Chart(ctx, {
+                type: 'bar', // グラフの種類
+                data: officeData, // データ
+                options: {
+                    scales: {                          //軸設定
+                        yAxes: [{                      //y軸設定
+                            ticks: {                      //最大値最小値設定
+                                min: 0,                   //最小値
+                                max: 5,                  //最大値
+                                fontSize: 18,             //フォントサイズ
+                                stepSize: 1               //軸間隔
+                            },
+                        }],
+                    }
+                }
+            })
 
 
             break;
