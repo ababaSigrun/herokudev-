@@ -1,13 +1,21 @@
 titleWord{
     font-size:20px;
-    color:red;
-    border:2px gray solid;
+    color:black;
+    border:1px gray solid;
     padding:2px 2px 2px 2px;
     margin: 10px;
 }
 
+
+titleWord:hover{
+    background-color: lightpink;
+        color:red;
+}
+
+
 titleWord:active{
     background-color: pink;
+        color:red;
 }
 
 Display.skill{
@@ -40,8 +48,15 @@ div.speace{
   margin: 10px;  
 }
 
+/* 基本ボタン */
 button.default {
-    width: 80px;
-    height: 30px;
-    color: red;
+    font-size: 1.4em;
+    padding: 5px 5px;
+    background-color:white;
+    color: black;
+}
+
+button.default:hover {
+    background-color:pink;
+    color:red;
 }
