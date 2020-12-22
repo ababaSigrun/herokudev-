@@ -6,12 +6,10 @@ titleWord{
     margin: 10px;
 }
 
-
 titleWord:hover{
-    background-color: lightpink;
+    background-color: mistyrose;
         color:red;
 }
-
 
 titleWord:active{
     background-color: pink;
@@ -57,6 +55,11 @@ button.default {
 }
 
 button.default:hover {
-    background-color:pink;
+    background-color:mistyrose;
     color:red;
+}
+
+button.default:active{
+    background-color: pink;
+        color:red;
 }
