@@ -2,7 +2,7 @@ const progarmData = {
     labels: ['Java', 'VBA', 'C', 'COBOL', 'Javascript', 'Python', '4D'],
     datasets: [{
         label: '習得レベル',
-        data: [5, 4.8, 3.5, 3.5, 2.5, 2, 1.5],
+        data: [5, 4, 3, 3, 3, 3, 2],
         backgroundColor: ['lightseagreen', 'darkturquoise', 'mediumturquoise', 'turquoise', 'palegreen', 'springgreen', 'mediumseagreen']
     }]
 }

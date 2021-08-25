@@ -32,9 +32,9 @@ function getDisplay(arg1) {
         各ページのエレメントを取得
     */
 
-    var skilD = document.getElementById("skilD");
-    var storyD = document.getElementById("storyD");
-    var porfileD = document.getElementById("porfileD");
+    const skilD = document.getElementById("skilD");
+    const storyD = document.getElementById("storyD");
+    const porfileD = document.getElementById("porfileD");
     switch (arg1) {
         case "skill":
             skilD.style.display = 'block';
@@ -60,15 +60,15 @@ function getDisplay(arg1) {
  * 年齢計算
  */
 function ageCalculation() {
-    var dateNow = new Date();
-    var dateBirth = new Date(2018, 0, 31);
-    var timeTillNow = dateNow.getTime() - dateBirth.getTime();
-    var daysTillNow = timeTillNow / (1000 * 3600 * 24);
+    const dateNow = new Date();
+    const dateBirth = new Date(2018, 0, 31);
+    const timeTillNow = dateNow.getTime() - dateBirth.getTime();
+    const daysTillNow = timeTillNow / (1000 * 3600 * 24);
     const DAYS_PER_MONTH = 365 / 12;
-    var ageY = Math.floor(daysTillNow / 365);
-    var ageM = Math.floor((daysTillNow - 365 * ageY) / DAYS_PER_MONTH);
-    var ageD = Math.floor((daysTillNow - 365 * ageY - DAYS_PER_MONTH * ageM));
-    var olds =  ageY + "歳" + ageM + "ヶ月" + ageD + "日";
+    const ageY = Math.floor(daysTillNow / 365);
+    const ageM = Math.floor((daysTillNow - 365 * ageY) / DAYS_PER_MONTH);
+    const ageD = Math.floor((daysTillNow - 365 * ageY - DAYS_PER_MONTH * ageM));
+    const olds =  ageY + "歳" + ageM + "ヶ月" + ageD + "日";
     document.getElementById("oldid").innerHTML = olds;
 }
 
