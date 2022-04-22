@@ -1,15 +1,15 @@
 const progarmData = {
     labels: ['Java', 'VBA', 'C', 'COBOL', 'Javascript', 'Python', '4D'],
     datasets: [{
-        label: '習得レベル',
-        data: [5, 4, 3, 3, 3, 3, 2],
+        label: '習得レベル(Lv3で1人月程度のイメージ）',
+        data: [5, 4, 3, 3, 3, 3, 3],
         backgroundColor: ['lightseagreen', 'darkturquoise', 'mediumturquoise', 'turquoise', 'palegreen', 'springgreen', 'mediumseagreen']
     }]
 }
 const detaBaseData = {
     labels: ['MariaDB', 'OracleDB', 'Access', '4D', 'SQLServer'],
     datasets: [{
-        label: '習得レベル',
+        label: '習得レベル(Lv3で1人月程度のイメージ）',
         data: [5, 4.5, 2.0, 1.5, 0.5],
         backgroundColor: ['lightseagreen', 'darkturquoise', 'mediumturquoise', 'turquoise', 'palegreen'],
         borderWidth: 1
@@ -19,7 +19,7 @@ const detaBaseData = {
 const officeData = {
     labels: ['Excel', 'Word', 'Outlook', 'PowerPoint'],
     datasets: [{
-        label: '習得レベル',
+        label: '習得レベル(Lv3で1人月程度のイメージ）',
         data: [5, 4, 2.0, 2.0],
         backgroundColor: ['lightseagreen', 'darkturquoise', 'mediumturquoise', 'turquoise'],
         borderWidth: 1
