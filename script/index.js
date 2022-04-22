@@ -68,7 +68,15 @@ function ageCalculation() {
     const ageY = Math.floor(daysTillNow / 365);
     const ageM = Math.floor((daysTillNow - 365 * ageY) / DAYS_PER_MONTH);
     const ageD = Math.floor((daysTillNow - 365 * ageY - DAYS_PER_MONTH * ageM));
-    const olds =  ageY + "歳" + ageM + "ヶ月" + ageD + "日";
+    const olds = ageY + "歳" + ageM + "ヶ月" + ageD + "日";
     document.getElementById("oldid").innerHTML = olds;
 }
 
+/**
+ * 業務詳細 というか感想。
+ * @param {*} no 
+ */
+function information(no) {
+ //  console.log(no);
+ alert(no + " :まだ未実装");
+}
