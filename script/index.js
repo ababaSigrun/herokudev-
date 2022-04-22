@@ -78,5 +78,6 @@ function ageCalculation() {
  */
 function information(no) {
  //  console.log(no);
- alert(no + " :まだ未実装");
+ alert(no + " :まだ未実装 モーダルで実装する予定。");
+
 }
