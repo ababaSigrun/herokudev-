@@ -77,10 +77,10 @@ function ageCalculation() {
  * @param {*} no 
  */
 function information(no) {
-    const targetSpeaceId = 'detail' + no;
-    const targetButtonId = 'detailButton' + no;
-    const elem = document.getElementById(targetSpeaceId);
-    const button = document.getElementById(targetButtonId);
+    // const targetSpeaceId = 'detail' + no;
+    // const targetButtonId = 'detailButton' + no;
+    const elem = document.getElementById('detail' + no);
+    const button = document.getElementById( 'detailButton' + no);
 
     if (elem.hidden == false) {
         elem.hidden = true;
