@@ -77,58 +77,16 @@ function ageCalculation() {
  * @param {*} no 
  */
 function information(no) {
-    // ここの部分はcace文で切り分けること。
-    let elem;
-    switch (no) {
-        case 1:
-            elem = document.getElementById('detail1');
-            break;
-        case 2:
-            elem = document.getElementById('detail2');
-            break;
-        case 3:
-            elem = document.getElementById('detail3');
-            break;
-        case 4:
-            elem = document.getElementById('detail4');
-            break;
-        case 5:
-            elem = document.getElementById('detail5');
-            break;
-        case 6:
-            elem = document.getElementById('detail6');
-            break;
-        case 7:
-            elem = document.getElementById('detail7');
-            break;
-        case 8:
-            elem = document.getElementById('detail8');
-            break;
-        case 9:
-            elem = document.getElementById('detail9');
-            break;
-        case 10:
-            elem = document.getElementById('detail10');
-            break;
-        case 11:
-            elem = document.getElementById('detail11');
-            break;
-        case 12:
-            elem = document.getElementById('detail12');
-            break;
-        case 13:
-            elem = document.getElementById('detail13');
-            break;
-        default:
-            console.log('作ってないよ');
-    }
-
-
-
+    const targetSpeaceId = 'detail' + no;
+    const targetButtonId = 'detailButton' + no;
+    const elem = document.getElementById(targetSpeaceId);
+    const button = document.getElementById(targetButtonId);
 
     if (elem.hidden == false) {
         elem.hidden = true;
+        button.textContent = 'more';
     } else {
         elem.hidden = false;
+        button.textContent = 'close';
     }
 }
