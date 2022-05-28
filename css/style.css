@@ -1,73 +1,79 @@
-titleWord{
-    font-size:20px;
-    color:black;
-    border:1px gray solid;
-    padding:2px 2px 2px 2px;
+titleWord {
+    font-size: 20px;
+    color: black;
+    border: 1px gray solid;
+    padding: 2px 2px 2px 2px;
     margin: 10px;
 }
 
-titleWord:hover{
+explanationHead {
+    font-size: 45px;
+}
+
+titleWord:hover {
     background-color: mistyrose;
-        color:red;
+    color: red;
 }
 
-titleWord:active{
+titleWord:active {
     background-color: pink;
-        color:red;
+    color: red;
 }
 
-Display.skill{
+Display.skill {
     background-color: beige;
-    display:none;
+    display: none;
 }
 
-Display.story{
-        background-color: lightcyan;
-        display:none;
+Display.story {
+    background-color: lightcyan;
+    display: none;
 
 }
 
-Display.profile{
+Display.profile {
     background-color: lavender;
-    display:none;
+    display: none;
 }
 
 
-p.titleHead{
-  font-size:large;
-  margin:1px 1px 1px 1px;
+p.titleHead {
+    font-size: large;
+    margin: 1px 1px 1px 1px;
 }
 
-div.sentence{
+div.sentence {
     margin: 10px;
 
 }
-div.speace{
-  margin: 10px;  
+
+div.speace {
+    margin: 10px;
 }
 
 /* 基本ボタン */
 button.default {
     font-size: 1.4em;
     padding: 5px 5px;
-    background-color:white;
+    background-color: white;
     color: black;
 }
 
 button.default:hover {
-    background-color:mistyrose;
-    color:red;
+    background-color: mistyrose;
+    color: red;
 }
 
-button.default:active{
+button.default:active {
     background-color: pink;
-    color:red;
+    color: red;
 }
 
 /** テーブル */
-th{
+th {
     border: 1px solid #333;
-    background-color  :rgb(20, 114, 223);;
+    background-color: rgb(20, 114, 223);
+    ;
 }
 
 td {
@@ -76,14 +82,12 @@ td {
 
 
 
-Display.skill{
+Display.skill {
     width: 500px;
-    height:300px;
+    height: 300px;
 }
 
-#footer{
+#footer {
     text-align: center;
-    
+
 }
-
-

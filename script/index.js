@@ -35,23 +35,27 @@ function getDisplay(arg1) {
     const skilD = document.getElementById("skilD");
     const storyD = document.getElementById("storyD");
     const porfileD = document.getElementById("porfileD");
+    const mainD = document.getElementById("explanationD");
     switch (arg1) {
         case "skill":
             skilD.style.display = 'block';
             storyD.style.display = 'none';
             porfileD.style.display = 'none';
+            mainD.style.display = 'none';
             break;
 
         case "story":
             skilD.style.display = 'none';
             storyD.style.display = 'block';
             porfileD.style.display = 'none';
+            mainD.style.display = 'none';
             break;
 
         case "profile":
             skilD.style.display = 'none';
             storyD.style.display = 'none';
             porfileD.style.display = 'block';
+            mainD.style.display = 'none';
             break;
     }
 }
