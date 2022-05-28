@@ -6,6 +6,10 @@ titleWord{
     margin: 10px;
 }
 
+explanation{
+    font-size:45px;    
+}
+
 titleWord:hover{
     background-color: mistyrose;
         color:red;
