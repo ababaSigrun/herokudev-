@@ -23,6 +23,14 @@ document.getElementById("profile").onclick = function () {
     ageCalculation();
 };
 
+/**
+ *  profileクリック時
+ */
+document.getElementById("information").onclick = function () {
+    getDisplay("information");
+    ageCalculation();
+};
+
 
 /**
  * ディスプレイ表示
@@ -35,7 +43,7 @@ function getDisplay(arg1) {
     const skilD = document.getElementById("skilD");
     const storyD = document.getElementById("storyD");
     const porfileD = document.getElementById("porfileD");
-    const mainD = document.getElementById("explanationD");
+    const mainD = document.getElementById("informationD");
     switch (arg1) {
         case "skill":
             skilD.style.display = 'block';
@@ -56,6 +64,12 @@ function getDisplay(arg1) {
             storyD.style.display = 'none';
             porfileD.style.display = 'block';
             mainD.style.display = 'none';
+            break;
+        case "information":
+            skilD.style.display = 'none';
+            storyD.style.display = 'none';
+            porfileD.style.display = 'none';
+            mainD.style.display = 'block';
             break;
     }
 }
@@ -86,7 +100,7 @@ function information(no) {
 
     if (elem == null || button == null) {
         console.log("ボタンが不正  :" + no);
-        return ;
+        return;
     }
 
     if (elem.hidden == false) {
